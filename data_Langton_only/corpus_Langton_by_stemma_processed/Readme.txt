@@ -1,0 +1,3 @@
+The raw and processed data was disclosed only for peer review, and is unfortunately not published in this repository due to copyright limitations. I expect to be able to disclose all data in the final report. Meanwhile, if you would like to inspect the data, please contact me at j.maliszewski@uw.edu.pl.
+
+You can reproduce the exploratory analysis discussed in the paper using the masked data provided in this repository.
