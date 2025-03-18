@@ -1,4 +1,4 @@
-# Used to draw samples for test presented in figure 2.
+# Used to draw samples for the test presented in Figure 2.
 
 import os
 
