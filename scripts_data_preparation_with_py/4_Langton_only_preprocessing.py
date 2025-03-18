@@ -13,15 +13,15 @@ from collections import Counter
 def preprocess(raw_txt):
 	'''Reads in a string, strips all punctuation and case.
 	I remove also the numerals, since they will otherwise end up on MFW list and are used inconsistently in the data. 
-	Most of these constitute editorial additions, uneven accros the corpus, 
-	so it is a reasonable normalization to ommit them.
-	I normalize ae >> e (relevant in 'quae' and 'haec' occurences), sed >> set, and u/v.'''
+	Most of these constitute editorial additions, uneven across the corpus, 
+	so it is a reasonable normalization to omit them.
+	I normalize ae >> e (relevant in 'quae' and 'haec' occurrences), sed >> set, and u/v.'''
 
 	non_letters = re.compile(r"[^A-Za-z\s]")
-	raw_txt = re.sub(non_letters, " ",raw_txt) # remove all special characters; add spaces, so as not to accidentaly meld words.
+	raw_txt = re.sub(non_letters, " ",raw_txt) # remove all special characters; add spaces, so as not to accidentally meld words.
 	raw_txt = re.sub(" +", " ", raw_txt).lower() # remove any resulting double spaces, normalize case.
 	
-	# normalize ortography
+	# normalize orthography
 	raw_txt = re.sub("quae", "que", raw_txt)
 	raw_txt = re.sub("haec", "hec", raw_txt)
 	raw_txt = re.sub("\bsed\b", "set", raw_txt)
