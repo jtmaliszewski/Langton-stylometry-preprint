@@ -4,7 +4,7 @@
 # 2) volume of the edition (I, II, III.1-3, IV); 
 # 3) list of transmitting codices, with folio numbers of incipit and explicit. 
 #
-# Note that folio numbers are mostly incomplete - they are not relevant for the CHR contribution.
+# Note that folio numbers are mostly incomplete - they are not relevant for this contribution.
 #
 # 
 
