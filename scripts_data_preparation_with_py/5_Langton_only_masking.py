@@ -9,7 +9,7 @@ from collections import Counter
 
 
 def get_mfw(directory, integer):
-	# merges all txt's in a directory and returns top words, lenght indicated by integer, 
+	# merges all txt's in a directory and returns top words, length indicated by integer, 
 
 	# collect preprocessed txt's from the directory
 	full_corpus = ''
@@ -18,7 +18,7 @@ def get_mfw(directory, integer):
 			processed_text = file.read() # at this point data should be already processed
 			full_corpus += "\n"+processed_text
 
-	# split the full corpus and count occurences
+	# split the full corpus and count occurrences
 	Freq = Counter(full_corpus.split())
 	most_occur = Freq.most_common(integer)
 
