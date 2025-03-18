@@ -1,6 +1,6 @@
 # Snippets of the below code have been adapted from training materials prepared by  Artjoms Šeļa and Jeremi Ochab, available at https://github.com/perechen/ESU_24_comptext
 
-# The below code reproduces the figure 2 from CHR 2025 contribution, "It takes a village to write a book: mapping anonymous contributions in Stephen Langton's Quaestiones Theologiae". You can use it to:
+# The below code reproduces Figure 2 from CHR 2025 contribution, "It takes a village to write a book: mapping anonymous contributions in Stephen Langton's Quaestiones Theologiae". You can use it to:
 # 1. run custom analysis with stylo
 # 2. export relevant frequencies table
 # 3. run PCA and label the data
@@ -15,7 +15,7 @@ lapply(c("stylo", "ggplot2"),
 library(stylo)
 library(ggplot2)
 
-# If you want to experiment with different parameters, run stylo(corpus.dir = "corpus_Aquinas_Courson_Langton_masked") and use the GUI. Note that due to corpus masking, the max available MFW is 200 (would you like to test longer wordlists or other features, please email me at <anonymized>). Also, it is necessary to start at rank 2, since the most common token in the corpus is the MASKEDTOKEN.
+# If you want to experiment with different parameters, run stylo(corpus.dir = "corpus_Aquinas_Courson_Langton_masked") and use the GUI. Note that due to corpus masking, the max available MFW is 200 (would you like to test longer wordlists or other features, please email me at j.maliszewski@uw.edu.pl). Also, it is necessary to start at rank 2, since the most common token in the corpus is the MASKEDTOKEN.
 
 # This produces the test featured in the paper, figure 2, with stylo's default plot
 results_figure_2 = stylo(
