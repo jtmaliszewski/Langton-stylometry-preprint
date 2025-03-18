@@ -8,7 +8,7 @@ from collections import Counter
 
 
 def get_mfw(directory, integer):
-	# merges all txt's in a directory and returns top words, lenght indicated by integer, 
+	# merges all txt's in a directory and returns top words, length indicated by integer, 
 
 	# collect preprocessed txt's from the directory
 	full_corpus = ''
@@ -73,5 +73,5 @@ else:
 mask_corpus(unmasked_data, masked_data, mfw_list)
 
 """NOTE: the resulting corpus has to be analyzed starting from 
-the second most frequent word, since the MASKEDTOKEN is 
-the most common word in the corpus after this process."""
+the second most frequent word, since after this process the MASKEDTOKEN is 
+the most common word in the corpus."""
